@@ -1,0 +1,532 @@
+@charset "UTF-8";
+
+
+/* ♡♥♡♥ << 폰트 >> ♥♡♥♡ */
+
+/* ♡ << 프리젠테이션 >> ♡ */
+@font-face {
+    font-family: 'Freesentation-4Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Freesentation-6SemiBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Freesentation-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+/* ♡ << 주아체 >> ♡ */
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ♡♥♡♥ << 색상 >> ♥♡♥♡ */
+
+:root {
+    --mainC : #FFA4C0;
+    --grayC1 : #444444;
+    --grayC2 : #999999;
+}
+
+
+/* ♡♥♡♥ << 초기화 >> ♥♡♥♡ */
+
+* {margin: 0; padding: 0;}
+a {text-decoration: none;}
+li {list-style: none;}
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-use-select: none;
+    user-select: none;
+}
+#wrap {
+    width: 100%;
+    font-family: 'Freesentation-4Regular';
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* ♡♥♡♥ << 스크롤바 >> ♥♡♥♡ */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    height: 20%;
+    background: var(--mainC);
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: rgba(175, 175, 175, 0.3);
+}
+
+
+/* ♡♥♡♥ << 상단 >> ♥♡♥♡ */
+
+/* ♥ << 헤더 >> ♥ */
+#wrap header {
+    width: 100%;
+    height: 70px;
+    /* 스크롤 내려도 고정 */
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+}
+/* ♡ << 헤더 이너 >> ♡ */
+#wrap header .header_inner {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+/* ♡ < 어여모 로고 > ♡ */
+#wrap header .header_inner h1.logo a img {
+    width: 150px;
+}
+/* ♡ < 중앙 메뉴 > ♡ */
+#wrap header .header_inner nav.c_menu {
+    position: absolute;
+    right: 380px;
+    height: 70px;
+    line-height: 70px;
+}
+#wrap header .header_inner nav.c_menu ul.menu {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+#wrap header .header_inner nav.c_menu ul.menu>li {
+    position: relative;
+}
+#wrap header .header_inner nav.c_menu ul.menu>li>a {
+    display: block;
+    color: #7B7B7B;
+    font-size: 22px;
+    width: 100px;
+    height: 70px;
+    line-height: 70px;
+}
+#wrap header .header_inner nav.c_menu ul.menu>li>a:hover {
+    color: var(--mainC)
+}
+#wrap header .header_inner nav.c_menu ul.menu li ul.sub {
+    display: none;
+    background-color: hsl(342, 100%, 82%, 0.8);
+    width: 150px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#wrap header .header_inner nav.c_menu ul.menu li ul.sub li {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+#wrap header .header_inner nav.c_menu ul.menu li ul.sub li a {
+    color: #fff;
+    padding: 10px; 
+}
+#wrap header .header_inner nav.c_menu ul.menu li ul.sub li:hover {
+    background-color: hsla(342, 100%, 74%, 0.8);
+}
+/* ♡ < 우측 메뉴 > ♡ */
+#wrap header .header_inner .r_menu {
+    /* 버튼 전체 크기 */
+    width: 180px;
+    position: absolute;
+    right: 80px;
+}
+#wrap header .header_inner .r_menu ul {
+    /* 인라인-블록 요소 사이의 공백 제거 */
+    font-size: 0;
+}
+#wrap header .header_inner .r_menu ul li {
+    /* inline-block : 메뉴 항목, 버튼 그룹 등 단순히 여러 요소를 가로로 나열하고자 할 때 유용 */
+    display: inline-block;
+    text-align: center;
+    /* li 요소가 2개이므로 크기를 반으로 나누기 위함 */
+    width: 50%;
+}
+#wrap header .header_inner .r_menu ul li a {
+   display: block;
+   line-height: 34px;
+   text-align: center;
+   border: 1px solid #FFA4C0;
+   font-size: 17px;
+   color: #FFA4C0;
+   border-radius: 50px 0 0 50px;
+   background-color: rgba(255, 255, 255, 0.5);
+   transition: background 0.2s ease-in-out;
+}
+#wrap header .header_inner .r_menu ul li:nth-child(2) a {
+    border-left: none;
+    border-radius: 0 50px 50px 0;
+}
+#wrap header .header_inner .r_menu ul li:hover a {
+    background-color: rgba(255, 221, 242, 0.5);
+    font-weight: bold;
+}
+/* ♡ < 카카오톡 아이콘 > ♡ */
+#wrap header .header_inner .k_icon {
+    margin-top: 4px;
+}
+/* ♡ < 모바일 : 토글 > ♡ */
+#wrap header .header_inner .m_toggle {
+    display: none;
+}
+
+
+/* ♡♥♡♥ << 중앙 >> ♥♡♥♡ */
+
+/* ♥ << 박스 1 >> ♥ */
+#wrap section.box_1 {
+    width: 100%;
+    height: 1700px;
+    background-color: #fff;
+    position: relative;
+}
+/* ♡ << 배너 >> ♡ */
+#wrap section.box_1 .banner {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 100px;
+    overflow: hidden;
+}
+/* ♡ < 이미지 > ♡ */
+#wrap section.box_1 .banner img {
+    width: 100%;
+    height: 100%;
+}
+/* ♡ < 텍스트 > ♡ */
+#wrap section.box_1 .banner .text_box {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: rgba(255, 255, 255, 0.8);
+}
+#wrap section.box_1 .banner .text_box span {
+    font-family: 'Freesentation-6SemiBold';
+    display: block;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+#wrap section.box_1 .banner .text_box p {
+    font-size: 18px;
+}
+/* ♡ << 박스 1 이너 >> ♡ */
+#wrap section.box_1 .box_1_inner {
+    width: calc(100% - 350px);
+    height: 1200px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* ♡ < 제목 > ♡ */
+#wrap section.box_1 .box_1_inner p.arrow {
+    color: var(--grayC1);
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    padding-left: 40px;
+    font-family: 'Freesentation-8ExtraBold';
+}
+#wrap section.box_1 .box_1_inner p.arrow::after {
+    content: '';
+    width: 30px;
+    height: 1px; 
+    background-color: var(--grayC1);
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+/* ♡ < 문구 > ♡ */
+#wrap section.box_1 .box_1_inner p.txt {
+    margin-top: 30px;
+    color: var(--grayC2);
+    font-size: 25px;
+}
+/* ♡ < 콘텐츠 전체 박스 > ♡ */
+#wrap section.box_1 .box_1_inner .con_all {
+    width: 100%;
+    height: 1100px;
+    position: absolute;
+    bottom: 0;
+}
+/* ♡ << 콘텐츠 1 >> ♡ */
+#wrap section.box_1 .box_1_inner .con_all .con1 {
+    width: 100%;
+    height: 40%;
+    position: relative;
+}
+/* ♡ < 제목 > ♡ */
+#wrap section.box_1 .box_1_inner .con_all .con1 h2 {
+    color: var(--mainC);
+    font-family: 'Freesentation-6SemiBold';
+    font-size: 40px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* ♡ < 박스 > ♡ */
+#wrap section.box_1 .box_1_inner .con_all .con1 .box_all {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#wrap section.box_1 .box_1_inner .con_all .con1 .box_all .box .bg {
+    width: 250px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid var(--grayC2);
+    position: relative;
+    top: -20px;
+    z-index: -1;
+}
+#wrap section.box_1 .box_1_inner .con_all .con1 .box_all .box .bg>p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--grayC1);
+    text-align: center;
+    padding: 30px;
+}
+#wrap section.box_1 .box_1_inner .con_all .con1 .box_all .box .bg::before {
+    content: url(../images/sub_arrowR.svg);
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#wrap section.box_1 .box_1_inner .con_all .con1 .box_all .box:nth-child(5) .bg::before {
+    display: none;
+}
+#wrap section.box_1 .box_1_inner .con_all .con1 .box_all .box .num {
+    width: 40px;
+    height: 40px;
+    background-color: #CEC0EB;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+#wrap section.box_1 .box_1_inner .con_all .con1 .box_all .box .num>p {
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+/* ♡ < 문구 > ♡ */
+#wrap section.box_1 .box_1_inner .con_all .con1 p.txt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#wrap section.box_1 .box_1_inner .con_all .con1 p.txt span {
+    font-size: 16px;
+    padding: 5px;
+    color: #fff;
+    background-color: #8dc7eb;
+}
+/* ♡ << 콘텐츠 2 >> ♡ */
+#wrap section.box_1 .box_1_inner .con_all .con2 {
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+/* ♡ < 제목 > ♡ */
+#wrap section.box_1 .box_1_inner .con_all .con2 h2 {
+    color: var(--mainC);
+    font-family: 'Freesentation-6SemiBold';
+    font-size: 40px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* ♡ < 박스 > ♡ */
+#wrap section.box_1 .box_1_inner .con_all .con2 .box_all2 {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+#wrap section.box_1 .box_1_inner .con_all .con2 .box_all2 .box2 {
+    width: 470px;
+    height: 100%;
+}
+#wrap section.box_1 .box_1_inner .con_all .con2 .box_all2 .box2 .txt1 {
+    width: 100%;
+    height: 115px;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+#wrap section.box_1 .box_1_inner .con_all .con2 .box_all2 .box2:nth-child(1) .txt1 {
+    background-color: #CEC0EB;
+}
+#wrap section.box_1 .box_1_inner .con_all .con2 .box_all2 .box2:nth-child(2) .txt1 {
+    background-color: #F6DDA8;
+}
+#wrap section.box_1 .box_1_inner .con_all .con2 .box_all2 .box2:nth-child(3) .txt1 {
+    background-color: #C5E1F2;
+}
+#wrap section.box_1 .box_1_inner .con_all .con2 .box_all2 .box2 .txt1>p {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 115px;
+}
+#wrap section.box_1 .box_1_inner .con_all .con2 .box_all2 .box2 .txt2 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+}
+#wrap section.box_1 .box_1_inner .con_all .con2 .box_all2 .box2 .txt2 span {
+    color: var(--mainC);
+}
+/* ♡ < 버튼 > ♡ */
+#wrap section.box_1 .box_1_inner .con_all .con2 .btn {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#wrap section.box_1 .box_1_inner .con_all .con2 .btn a {
+    width: 220px;
+    height: 60px;
+    background-color: var(--mainC);
+    display: block;
+}
+#wrap section.box_1 .box_1_inner .con_all .con2 .btn a>p {
+    color: #fff;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+/* ♡♥♡♥ << 하단 >> ♥♡♥♡ */
+
+/* ♥ << 푸터 >> ♥ */
+#wrap footer {
+    width: 100%;
+    height: 150px;
+    background-color: #F7F7F7;
+}
+/* ♡ << 푸터 이너 >> ♡ */
+#wrap footer .footer_inner {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+/* ♡ < 어여모 하단 로고 > ♡ */
+#wrap footer .footer_inner .b_logo a img {
+    width: 150px;
+    height: auto;
+}
+/* ♡ < 메뉴 1 > ♡ */
+#wrap footer .footer_inner .menu_1 {
+    color: var(--grayC1);
+    line-height: 1.6;
+    font-size: 13px;
+    position: absolute;
+    left: 200px;
+}
+#wrap footer .footer_inner .menu_1 a {
+    color: var(--grayC1);
+    font-weight: bold;
+}
+/* ♡ < 아이콘 박스 > ♡ */
+#wrap footer .footer_inner .icon_box {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    position: absolute;
+    right: 480px;
+}
+/* ♡ < 메뉴 2 > ♡ */
+#wrap footer .footer_inner .menu_2 {
+    position: absolute;
+    right: 110px;
+}
+#wrap footer .footer_inner .menu_2 ul {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+#wrap footer .footer_inner .menu_2 ul li a {
+    color: var(--grayC1);
+    position: relative;
+}
+#wrap footer .footer_inner .menu_2 ul li:nth-child(4) a {
+    font-weight: bold;
+}
+#wrap footer .footer_inner .menu_2 ul li a::before {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 4px;
+    width: 2px;
+    height: 10px;
+    background-color: var(--grayC2);
+    pointer-events: none;
+    cursor: default;
+}
+#wrap footer .footer_inner .menu_2 ul li:nth-child(4) a::before {
+    display: none;
+}
+#wrap footer .footer_inner .menu_2 p {
+    margin-top: 5px;
+    color: var(--grayC2);
+    font-size: 13px;
+}
+/* ♡ < KCP > ♡ */
+#wrap footer .footer_inner .kcp {
+    width: 70px;
+    height: 70px;
+}
+#wrap footer .footer_inner .kcp a img {
+    width: 100%;
+    height: 100%;
+}

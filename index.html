@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>박하영 - 어여모 메인</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="shortcut icon" href="./images/favicon.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body style="overflow-x: hidden">
+    <div id="wrap">
+        <!-- ===========================================
+            ♡♥♡♥♡♥♡♥♡♥ << 상단 >>  ♥♡♥♡♥♡♥♡♥♡
+        =========================================== -->
+        <!-- ♡♥♡♥ << 헤더 >> ♥♡♥♡ -->
+        <header>
+            <!-- ♡ << 헤더 이너 >> ♡ -->
+            <div class="header_inner">
+                <!-- ♥ < 어여모 로고 > ♥ -->
+                <h1 class="logo">
+                    <a href="./index.html"><img src="./images/logo.png" alt="어여모 로고"></a>
+                </h1>
+                <!-- ♥ < 중앙 메뉴 > ♥ -->
+                <nav class="c_menu">
+                    <ul class="menu">
+                        <li><a href="./sub.html">어여모 소개</a>
+                            <ul class="sub">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">비전&미션</a></li>
+                                <li><a href="#">CI 소개</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub.html">어여모 소식</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">활동소식</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub.html">건강백서</a>
+                            <ul class="sub">
+                                <li><a href="#">건강상식</a></li>
+                                <li><a href="#">건강정보TV</a></li>
+                                <li><a href="#">매거진</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub.html">교육센터</a>
+                            <ul class="sub">
+                                <li><a href="#">LIVE 교육신청</a></li>
+                                <li><a href="#">동영상 교육</a></li>
+                                <li><a href="#">- 소아</a></li>
+                                <li><a href="#">- 여성</a></li>
+                                <li><a href="#">- 영양</a></li>
+                                <li><a href="#">- 질병/약</a></li>
+                                <li><a href="#">- 노인</a></li>
+                                <li><a href="#">- 약국경영</a></li>
+                                <li><a href="#">- 제품</a></li>
+                                <li><a href="#">교육 오디오 클립</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub.html">학술정보센터</a>
+                            <ul class="sub">
+                                <li><a href="#">학술 FAQ</a></li>
+                                <li><a href="#">어여모 지식iN</a></li>
+                                <li><a href="#">전문자료</a></li>
+                                <li><a href="#">어여모 원페이지</a></li>
+                                <li><a href="#">어여모 원페이지 미니</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub.html">커뮤니티</a>
+                            <ul class="sub">
+                                <li><a href="#">약사에게 물어보세요</a></li>
+                                <li><a href="#">약사끼리 묻고답하기</a></li>
+                                <li><a href="#">약사끼리 구인/구직</a></li>
+                                <li><a href="#">약사끼리 사고팔고</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub.html">고객센터</a>
+                            <ul class="sub">
+                                <li><a href="#">회원가입 및 유형안내</a></li>
+                                <li><a href="#">유료회원 신청 및 혜택</a></li>
+                                <li><a href="#">약사회원인증</a></li>
+                                <li><a href="#">1:1 문의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- ♥ < 우측 메뉴 > ♥ -->
+                <div class="r_menu p_r">
+                    <ul>
+                        <li><a href="#">어여모몰</a></li>
+                        <li><a href="#">사업자몰</a></li>
+                    </ul>
+                </div>
+                <!-- ♥ < 카카오톡 아이콘 > ♥ -->
+                <div class="k_icon">
+                    <a href="#"><img src="./images/kakao_icon.png" alt="카카오톡 상담 아이콘"></a>
+                </div>
+                <!-- ♥ < 모바일 : 토글 > ♥ -->
+                <div id="m_toggle" class="m_toggle">
+                    <a href="#"><img src="./images/m_menu.svg" alt="토글"></a>
+                </div>
+            </div>
+        </header>
+        <!-- ♡♥♡♥ << 모바일 : 사이드 메뉴 >> ♥♡♥♡ -->
+        <div id="m_menu" class="m_menu">
+            <button id="close" class="close">×</button>
+            <div class="login_box">
+                <p>로그인하세요.</p>
+                <ul class="login_btn">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+            <div class="menu_box">
+                <nav>
+                    <ul>
+                        <li><a href="./sub.html">어여모 소개</a></li>
+                        <li><a href="./sub.html">어여모 소식</a></li>
+                        <li><a href="./sub.html">건강백서</a></li>
+                        <li><a href="./sub.html">교육센터</a></li>
+                        <li><a href="./sub.html">학술정보센터</a></li>
+                        <li><a href="./sub.html">커뮤니티</a></li>
+                        <li><a href="./sub.html">고객센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="r_menu m_r">
+                <ul>
+                    <li><a href="#">어여모몰</a></li>
+                    <li><a href="#">사업자몰</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===========================================
+            ♡♥♡♥♡♥♡♥♡♥ << 중앙 >>  ♥♡♥♡♥♡♥♡♥♡
+        =========================================== -->
+        <!-- ♡♥♡♥ << 박스 1 >> ♥♡♥♡ -->
+        <section class="box_1">
+            <!-- ♡ << 배경 >> ♡ -->
+            <div class="bg wow fadeInRight">
+                <img src="./images/box1_img1.png" alt="배경">
+            </div>
+            <!-- ♡ << 텍스트 박스 >> ♡ -->
+            <div class="text_inner">
+                <div class="text_box">
+                    <!-- ♥ < 제목 > ♥ -->
+                    <h2 class="wow fadeInLeft">
+                        Tailored<br>
+                        healthcare,<br>
+                        Together
+                    </h2>
+                    <!-- ♥ < 문구 > ♥ -->
+                    <p class="wow fadeInLeft">소아, 여성, 임부, 노인 나아가 국민 건강을 위해 힘쓰는 약사님들과 함께합니다.</p>
+                    <!-- ♥ < 버튼 > ♥ -->
+                    <div class="btn wow fadeInLeft">
+                        <a href="#"><img src="./images/box1_arrowR.svg" alt="화살표"><span>회원 혜택 및 유형 안내</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ♡♥♡♥ << 박스 2 >> ♥♡♥♡ -->
+        <section class="box_2">
+            <!-- ♡ << 동그라미 >> ♡ -->
+            <div class="ellipse">
+                <img src="./images/box2_img1.png" alt="동그라미" class="wow fadeIn">
+            </div>
+            <!-- ♡ << 박스 2 이너 >> ♡ -->
+            <div class="box_2_inner">
+                <!-- ♥ < 텍스트 박스 > ♥ -->
+                <div class="text_box">
+                    <h3 class="wow fadeInLeft">
+                        토탈헬스케어를 위해<br>
+                        약사와 고객과 함께 합니다.
+                    </h3>
+                    <p class="wow fadeInRight">
+                        어여모는 어린이, 여성 나아가 국민의 건강관리 길라잡이 역할을 합니다.<br>
+                        어여모 플랫폼은 약국이 최적의 토탈헬스케어 서비스를 제공할 수 있도록 안내하며, 전문약사 교육을 통해 개인맞춤형<br>
+                        건강관리 서비스가 가능하도록 도와줍니다.
+                    </p>
+                </div>
+                <!-- ♥ < 메모 박스 > ♥ -->
+                <ul class="memo_box">
+                    <!-- ♡ < 메모 1 > ♡ -->
+                    <li class="wow fadeInUp" data-wow-delay="0.1s">
+                        <a href="#">
+                            <div class="text">
+                                <p>
+                                    <span>01.</span><br>
+                                    회원 가입 및<br>
+                                    유형 안내
+                                </p>
+                            </div>
+                            <div class="icon">
+                                <img src="./images/box2_icon1.png" alt="아이콘1">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- ♡ < 메모 2 > ♡ -->
+                    <li class="wow fadeInUp" data-wow-delay="0.4s">
+                        <a href="#">
+                            <div class="text">
+                                <p>
+                                    <span>02.</span><br>
+                                    유료회원 신청 및<br>
+                                    혜택
+                                </p>
+                            </div>
+                            <div class="icon">
+                                <img src="./images/box2_icon2.png" alt="아이콘2">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- ♡ < 메모 3 > ♡ -->
+                    <li class="wow fadeInUp" data-wow-delay="0.7s">
+                        <a href="#">
+                            <div class="text">
+                                <p>
+                                    <span>03.</span><br>
+                                    어여모몰<br>
+                                    (비개국약사전용)
+                                </p>
+                            </div>
+                            <div class="icon">
+                                <img src="./images/box2_icon3.png" alt="아이콘3">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- ♡ < 메모 4 > ♡ -->
+                    <li class="wow fadeInUp" data-wow-delay="1s">
+                        <a href="#">
+                            <div class="text">
+                                <p>
+                                    <span>04.</span><br>
+                                    사업자몰<br>
+                                    (개국약사전용)
+                                </p>
+                            </div>
+                            <div class="icon">
+                                <img src="./images/box2_icon4.png" alt="아이콘4">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- ♡♥♡♥ << 박스 3 >> ♥♡♥♡ -->
+        <section class="box_3">
+            <!-- ♡ << 동그라미 >> ♡ -->
+            <div class="ellipse">
+                <img src="./images/box3_img1.png" alt="동그라미" class="wow fadeIn" data-wow-duration="5s">
+                <p>Health</p>
+            </div>
+            <!-- ♡ << 박스 3 이너 >> ♡ -->
+            <div class="box_3_inner">
+                <!-- ♥ < 제목 > ♥ -->
+                <h3>건강백서</h3>
+                <!-- ♥ < 콘텐츠 박스 > ♥ -->
+                <ul class="con_box">
+                    <!-- ♡ < 콘텐츠 1 > ♡ -->
+                    <li>
+                        <a href="#" class="wow fadeInUp" data-wow-delay="0.1s">
+                            <p class="scale"><img src="./images/box3_img2.jpg" alt="이미지1"></p>
+                            <p class="arrow">건강상식</p>
+                        </a>
+                    </li>
+                    <!-- ♡ < 콘텐츠 2 > ♡ -->
+                    <li>
+                        <a href="#" class="wow fadeInUp" data-wow-delay="0.2s">
+                            <p class="scale"><img src="./images/box3_img3.jpg" alt="이미지2"></p>
+                            <p class="arrow">건강정보TV</p>
+                        </a>
+                    </li>
+                    <!-- ♡ < 콘텐츠 3 > ♡ -->
+                    <li>
+                        <a href="#" class="wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="scale"><img src="./images/box3_img4.jpg" alt="이미지3"></p>
+                            <p class="arrow">매거진</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- ♡♥♡♥ << 박스 4 >> ♥♡♥♡ -->
+        <section class="box_4">
+            <!-- ♡ << 배경 >> ♡ -->
+            <div class="bg">
+                <img src="./images/box4_img1.png" alt="이미지" class="wow fadeInUp">
+            </div>
+            <!-- ♡ << 박스 4 이너 >> ♡ -->
+            <div class="box_4_inner">
+                <!-- ♥ < 공지사항 버튼 > ♥ -->
+                <div class="notice_btn">
+                    <h3 class="wow fadeInLeft">Notice</h3>
+                    <a href="#" class="wow fadeInLeft"><img src="./images/box4_arrowR.svg" alt="화살표"></a>
+                </div>
+                <!-- ♥ < 공지사항 박스 > ♥ -->
+                <div class="notice_box">
+                    <ul class="wow fadeInLeft">
+                        <!-- ♡ < 공지 1 > ♡ -->
+                        <li>
+                            <a href="#">2024 유료회원 이벤트 (4/25~5/31, 재고 소진시 마감)</a>
+                            <span>2024-07-26</span>
+                        </li>
+                        <!-- ♡ < 공지 2 > ♡ -->
+                        <li>
+                            <a href="#">【어여모 전문교육】 제9기 임산부상담 전문약사과정 신청 안내 [종료]</a>
+                            <span>2024-07-26</span>
+                        </li>
+                        <!-- ♡ < 공지 3 > ♡ -->
+                        <li>
+                            <a href="#">【어여모 전문교육】 제8기 임산부상담 전문약사과정 신청 안내 [종료]</a>
+                            <span>2024-07-26</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- ♡♥♡♥ << 박스 5 >> ♥♡♥♡ -->
+        <div class="box_5">
+            <!-- ♡ << 박스 5 이너 >> ♡ -->
+            <div class="box_5_inner">
+                <!-- ♥ < 콘텐츠 박스 > ♥ -->
+                <ul class="con_box wow flipInX">
+                    <!-- ♡ < 콘텐츠 1 > ♡ -->
+                    <li>
+                        <a href="#">
+                            <div class="btn"><img src="./images/box5_arrowR1.svg" alt="화살표1"></div>
+                            <div class="img"><img src="./images/box5_img1.png" alt="이미지1"></div>
+                            <div class="text_box">
+                                <span>프로비타포키즈</span>
+                                <p>
+                                    우리아이 액상형<br>
+                                    프리미엄 어린이<br>
+                                    멀티비타민<br>
+                                    '프로비타포키즈'
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- ♡ < 콘텐츠 2 > ♡ -->
+                    <li>
+                        <a href="#">
+                            <div class="btn"><img src="./images/box5_arrowR2.svg" alt="화살표2"></div>
+                            <div class="img"><img src="./images/box5_img2.png" alt="이미지2"></div>
+                            <div class="text_box">
+                                <span>KIMS</span>
+                                <p>
+                                    근거기반, 가장 신뢰할<br>
+                                    수 있는 의약정보를<br>
+                                    KIMS에서 확인하세요.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- ♡ < 콘텐츠 3 > ♡ -->
+                    <li>
+                        <a href="#">
+                            <div class="btn"><img src="./images/box5_arrowR3.svg" alt="화살표3"></div>
+                            <div class="img"><img src="./images/box5_img3.png" alt="이미지3"></div>
+                            <div class="text_box">
+                                <span>한국마더세이프</span>
+                                <p>
+                                    건강한 임신, 행복한 임신<br>
+                                    임산부약물정보센터,<br>
+                                    한국마더세이프 전문상담센터
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===========================================
+            ♡♥♡♥♡♥♡♥♡♥ << 하단 >>  ♥♡♥♡♥♡♥♡♥♡
+        =========================================== -->
+        <!-- ♡♥♡♥ << 푸터 >> ♥♡♥♡ -->
+        <footer>
+            <!-- ♡ << 푸터 이너 >> ♡ -->
+            <div class="footer_inner">
+                <!-- ♥ < 어여모 하단 로고 > ♥ -->
+                <div class="b_logo">
+                    <a href="./index.html"><img src="./images/b_logo.png" alt="어여모 하단 로고"></a>
+                </div>
+                <!-- ♥ < 메뉴 1 > ♥ -->
+                <div class="menu_1">
+                    <p>
+                        사업자등록번호 : 175-86-00797 <a href="#">[사업자정보확인]</a>  / 대표자 : 정혜진  / 주소 : 경기도 수원시 권선구 금호로 236 304호 (삼호빌딩)<br>
+                        대표전화 : <a href="tel:010-2531-6775">010-2531-6775</a>
+                    </p>
+                </div>
+                <!-- ♥ < 아이콘 박스 > ♥ -->
+                <div class="icon_box">
+                    <a href="#"><img src="./images/icon_b1.png" alt="인스타그램"></a>
+                    <a href="#"><img src="./images/icon_b2.png" alt="페이스북"></a>
+                    <a href="#"><img src="./images/icon_b3.png" alt="유튜브"></a>
+                    <a href="#"><img src="./images/icon_b4.png" alt="네이버블로그"></a>
+                </div>
+                <!-- ♥ < 메뉴 2 > ♥ -->
+                <div class="menu_2">
+                    <ul>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                    </ul>
+                    <p>
+                        Copyrights &copy; 2020 어여모. Corporation All rights reserved.
+                    </p>
+                </div>
+                <!-- ♥ < KCP 아이콘 > ♥ -->
+                <div class="kcp">
+                    <a href="#"><img src="./images/icon_b5.png" alt="아이콘"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
